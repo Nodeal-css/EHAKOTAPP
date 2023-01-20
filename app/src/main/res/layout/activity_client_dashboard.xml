@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClientDashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/purple_700"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:text="Client Dashboard" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutProfileClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imgProfileClient"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:src="@color/purple_700" />
+
+        <TextView
+            android:id="@+id/txtFullnameClient"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/imgProfileClient"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imgProfileClient"
+            android:layout_toRightOf="@id/imgProfileClient"
+            android:text="Full name" />
+
+        <TextView
+            android:id="@+id/txtAddressClient"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtFullnameClient"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/imgProfileClient"
+            android:text="Address" />
+
+        <TextView
+            android:id="@+id/txtClientID"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtAddressClient"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/imgProfileClient"
+            android:text="Client ID:" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btnBook"
+                android:layout_width="230dp"
+                android:layout_height="290dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#3700B3"
+                android:drawableTop="@drawable/book"
+                android:text="Book for E-Hakot\n\n"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnHistoryClient"
+                android:layout_width="230dp"
+                android:layout_height="290dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#3700B3"
+                android:drawableTop="@drawable/clienthistorylogo"
+                android:text="History\n\n"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnOngoingClient"
+                android:layout_width="230dp"
+                android:layout_height="290dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#3700B3"
+                android:drawableTop="@drawable/ongoingclient"
+                android:text="Ongoing booking\n\n"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedge"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="40dp"
+            android:text="Contact us\nvia email\nehakotsupport@example.com"
+            android:textColor="@color/white"
+            android:textSize="13sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

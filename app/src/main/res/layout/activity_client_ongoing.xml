@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClientOngoing">
+
+    <LinearLayout
+        android:id="@+id/layoutOngoingHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/layoutVehicleOngoing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imgVehicleOngoing"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@color/purple_700" />
+
+            <TextView
+                android:id="@+id/txtVehicleModelOngoing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgVehicleBook"
+                android:gravity="center"
+                android:text="Model"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/txtVehiclePlateOngoing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgVehicleBook"
+                android:gravity="center"
+                android:text="Plate Number"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutDriverOngoing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:paddingRight="60dp">
+
+            <ImageView
+                android:id="@+id/imgDriverOngoing"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@color/black" />
+
+            <TextView
+                android:id="@+id/txtDriverNameOngoing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/imgDriverOngoing"
+                android:text="Driver: " />
+
+            <TextView
+                android:id="@+id/txtLocationOngoing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDriverNameOngoing"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/imgDriverOngoing"
+                android:text="Location: " />
+
+            <TextView
+                android:id="@+id/txtDriverEmailOngoing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLocationOngoing"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/imgDriverOngoing"
+                android:text="Email: " />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_gray"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtBookingStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="STATUS"
+            android:textSize="20sp"
+            android:textColor="#ff9900"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Pick-Up Location"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/editPickupOngoing"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Address"
+            android:textSize="11sp"
+            android:focusable="false"
+            android:clickable="false"
+            android:drawableLeft="@android:drawable/ic_menu_mylocation"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Delivery Location"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/editDeliveryOngoing"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="11sp"
+            android:hint="Address"
+            android:focusable="false"
+            android:clickable="false"
+            android:drawableLeft="@android:drawable/ic_menu_mylocation"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Remarks"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/editRemarksOngoing"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Remarks"
+            android:textSize="11sp"
+            android:focusable="false"
+            android:clickable="false"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Total Payment"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txtRateOngoing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="P"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="#ff9900"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="98dp">
+
+        <Button
+            android:id="@+id/btnCancelBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="Cancel"
+            app:cornerRadius="40dp"/>
+
+        <Button
+            android:id="@+id/btnPaymentBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Proceed to Payment"
+            app:cornerRadius="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBookingPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="90dp"
+        android:visibility="gone"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Credit-Card Number"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            />
+
+
+        <EditText
+            android:id="@+id/editCreditCardNumber"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="### ### ###"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:src="@drawable/img"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnConfirmPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="20dp"
+            android:text="Confirm Payment"
+            app:cornerRadius="40dp"/>
+    </LinearLayout>
+</LinearLayout>

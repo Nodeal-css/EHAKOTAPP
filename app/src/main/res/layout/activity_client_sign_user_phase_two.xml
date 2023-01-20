@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientSignUserPhaseTwo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/purple_700"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="10dp"
+            android:text="Create an account"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:text=" Date Joined"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editDateJoinSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:hint="Date"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="20sp"
+            android:text=" Preferred Payment Type"/>
+
+        <EditText
+            android:id="@+id/editPaymentSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Visa, GCash, Paypal"
+            android:clickable="false"
+            android:focusable="false"
+            android:minHeight="48dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:src="@drawable/img"
+            android:layout_gravity="center"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:checkedButton="1"
+            >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GCash"
+                android:id="@+id/checkBoxGCash"
+                android:layout_above="@+id/escudo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                 />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paymaya"
+                android:id="@+id/checkBoxPaymaya"
+                android:layout_alignTop="@+id/checkBoxGCash"
+                android:layout_toRightOf="@+id/checkBoxGCash"
+                android:layout_toEndOf="@+id/checkBoxGCash"
+
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paypal"
+                android:id="@+id/checkBoxPaypal"
+                android:layout_alignTop="@+id/checkBoxPaymaya"
+                android:layout_toRightOf="@+id/checkBoxPaymaya"
+                android:layout_toEndOf="@+id/checkBoxPaymaya"
+
+                />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSaveSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="80dp"
+            app:cornerRadius="50dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

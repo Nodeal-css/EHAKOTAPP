@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgBookingIcon"
+        android:layout_width="100dp"
+        android:layout_height="78dp"
+        android:src="@color/purple_700"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtBookingStatusInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imgBookingIcon"
+        android:text="Status: " />
+
+    <TextView
+        android:id="@+id/txtBookingClientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBookingStatusInfo"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imgBookingIcon"
+        android:text="Client Name: " />
+
+    <TextView
+        android:id="@+id/txtBookingVehicleReq"
+        android:layout_toRightOf="@+id/imgBookingIcon"
+        android:layout_below="@+id/txtBookingClientName"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Used:: "/>
+
+    <TextView
+        android:id="@+id/txtBookingID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBookingVehicleReq"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imgBookingIcon"
+        android:text="Booking ID: " />
+
+</RelativeLayout>

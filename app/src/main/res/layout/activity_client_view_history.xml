@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientViewHistory"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:text="HISTORY"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:background="#ff9900"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_marginTop="20dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/txtPaymentIDHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Transaction ID: "/>
+
+        <TextView
+            android:id="@+id/txtBookIDHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Booking ID: "
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtVehicleHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Vehicle Used: "
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtDriverHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Driver: "
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtAmountHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Total Amount Paid: "
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:background="#f2f2f2"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/txtBookingStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="COMPLETED"
+            android:textSize="20sp"
+            android:textColor="#ff9900"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Pick-Up Location"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/editPickupHistory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Address"
+            android:textSize="20sp"
+            android:focusable="false"
+            android:clickable="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Delivery Location"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/editDeliveryHistory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:hint="Address"
+            android:focusable="false"
+            android:clickable="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Date Completed"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txtDateHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Date"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+</LinearLayout>

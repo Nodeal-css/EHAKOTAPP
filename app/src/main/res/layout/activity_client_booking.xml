@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClientBooking">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:background="@drawable/rectangle"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp">
+
+            <ImageView
+                android:id="@+id/imgVehicleBook"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginTop="20dp"
+                android:src="@color/purple_700" />
+
+            <TextView
+                android:id="@+id/txtVehicleModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgVehicleBook"
+                android:gravity="center"
+                android:text="Model"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/txtVehiclePlate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgVehicleBook"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Plate Number"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingTop="20dp"
+            android:layout_marginHorizontal="30dp">
+
+            <ImageView
+                android:id="@+id/imgDriverBook"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@color/black" />
+
+            <TextView
+                android:id="@+id/txtDriverNameBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/imgDriverBook"
+                android:text="Driver: " />
+
+            <TextView
+                android:id="@+id/txtLocationBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDriverNameBook"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/imgDriverBook"
+                android:text="Location: " />
+
+            <TextView
+                android:id="@+id/txtRateBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLocationBook"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/imgDriverBook"
+                android:text="Rate: " />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="40dp">
+
+            <Button
+                android:id="@+id/btnBookHakot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book for E-Hakot"
+                app:cornerRadius="50dp" />
+
+            <Button
+                android:id="@+id/btnViewReviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:cursorVisible="false"
+                android:text="Reviews"
+                android:textColor="@color/purple_700"
+                android:visibility="visible"
+                app:cornerRadius="50dp"
+                app:iconTint="#00673AB7"
+                app:strokeColor="#673AB7"
+                app:strokeWidth="2dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="60dp"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/editPickup"
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:hint="Pick-Up Location"
+                android:drawableLeft="@android:drawable/ic_menu_mylocation"/>
+
+            <EditText
+                android:id="@+id/editDelivery"
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:hint="Delivery Location"
+                android:drawableLeft="@android:drawable/ic_menu_mylocation"/>
+
+            <EditText
+                android:id="@+id/editRemarks"
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="Additional Remarks"
+                android:drawableLeft="@android:drawable/ic_menu_info_details"/>
+
+            <Button
+                android:id="@+id/btnSaveBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:text="Save"
+                app:cornerRadius="50dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

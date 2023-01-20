@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/drawable/circle.xml" value="0.1" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/drawable/clientongoing.xml" value="0.1395" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/drawable/rectangle.xml" value="0.1685" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/drawable/rectangle_gray.xml" value="0.107" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/drawable/roundedge.xml" value="0.19" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/drawable/roundedittext.xml" value="0.1925" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_client_booking.xml" value="0.25" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_client_dashboard.xml" value="0.25" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_client_history.xml" value="0.184375" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_client_ongoing.xml" value="0.22" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_client_profile.xml" value="0.2" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_client_sign_user.xml" value="0.22" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_client_sign_user_phase_two.xml" value="0.33" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_client_vehicles.xml" value="0.184375" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_client_view_history.xml" value="0.22" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_driver_add_vehicle.xml" value="0.25" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_driver_approve_booking.xml" value="0.25" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_driver_dashboard.xml" value="0.22634730538922157" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_driver_history.xml" value="0.184375" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_driver_ongoing.xml" value="0.22" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_driver_profile.xml" value="0.184375" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_driver_update_vehicle.xml" value="0.25" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_driver_vehicles.xml" value="0.184375" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_driver_view_booking.xml" value="0.22" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/activity_view_reviews.xml" value="0.1716485507246377" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/list_client_history.xml" value="0.33" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/list_driver_view_booking_template.xml" value="0.25" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/list_reviews_template.xml" value="0.5" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/layout/list_vehicles_template.xml" value="0.5314900153609831" />
+        <entry key="..\:/Android Studio/EHAKOTAPP/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

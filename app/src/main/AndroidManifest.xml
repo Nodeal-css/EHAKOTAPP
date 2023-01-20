@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ehakotapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EHAKOTAPP">
+        <activity
+            android:name=".DriverProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ClientProfile"
+            android:exported="false" />
+        <activity
+            android:name=".DriverHistory"
+            android:exported="false" />
+        <activity
+            android:name=".DriverUpdateVehicle"
+            android:exported="false" />
+        <activity
+            android:name=".ViewReviews"
+            android:exported="false" />
+        <activity
+            android:name=".ClientSignUserPhaseTwo"
+            android:exported="false" />
+        <activity
+            android:name=".ClientSignUser"
+            android:exported="false" />
+        <activity
+            android:name=".DriverOngoing"
+            android:exported="false" />
+        <activity
+            android:name=".DriverApproveBooking"
+            android:exported="false" />
+        <activity
+            android:name=".DriverViewBooking"
+            android:exported="false" />
+        <activity
+            android:name=".ClientViewHistory"
+            android:exported="false" />
+        <activity
+            android:name=".ClientHistory"
+            android:exported="false" />
+        <activity
+            android:name=".ClientOngoing"
+            android:exported="false" />
+        <activity
+            android:name=".ClientBooking"
+            android:exported="false" />
+        <activity
+            android:name=".ClientVehicles"
+            android:exported="false" />
+        <activity
+            android:name=".DriverVehicles"
+            android:exported="false" />
+        <activity
+            android:name=".DriverAddVehicle"
+            android:exported="false" />
+        <activity
+            android:name=".DriverDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ClientDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

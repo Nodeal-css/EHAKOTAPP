@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgVehicle"
+        android:layout_width="355dp"
+        android:layout_height="212dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:src="@color/purple_700"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtModel"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgVehicle"
+        android:layout_alignStart="@+id/imgVehicle"
+        android:layout_alignEnd="@+id/imgVehicle"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="175dp"
+        android:text="Model" />
+
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtModel"
+        android:layout_alignStart="@+id/txtModel"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="2dp"
+        android:text="Type" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtType"
+        android:layout_alignStart="@+id/txtType"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Current Location" />
+
+    <TextView
+        android:id="@+id/txtVehicleID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLocation"
+        android:layout_alignStart="@+id/txtLocation"
+        android:layout_marginStart="0dp"
+        android:text="Vehicle ID" />
+
+
+</RelativeLayout>

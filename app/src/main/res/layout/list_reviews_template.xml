@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgClientIMGReview"
+        android:layout_width="100dp"
+        android:layout_height="78dp"
+        android:src="@color/purple_700"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtClientNameReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imgClientIMGReview"
+        android:text="Name: " />
+
+    <TextView
+        android:id="@+id/txtReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtClientNameReview"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/imgClientIMGReview"
+        android:text="'Review'" />
+
+    <ImageView
+        android:id="@+id/starOne"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/txtReview"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imgClientIMGReview"
+        android:src="@android:drawable/btn_star_big_on"/>
+
+    <ImageView
+        android:id="@+id/starTwo"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/txtReview"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/starOne"
+        android:src="@android:drawable/btn_star_big_on"/>
+
+    <ImageView
+        android:id="@+id/starThree"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/txtReview"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/starTwo"
+        android:src="@android:drawable/btn_star_big_on"/>
+
+    <ImageView
+        android:id="@+id/starFour"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/txtReview"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/starThree"
+        android:src="@android:drawable/btn_star_big_on"/>
+
+    <ImageView
+        android:id="@+id/starFive"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/txtReview"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/starFour"
+        android:src="@android:drawable/btn_star_big_off"/>
+
+</RelativeLayout>

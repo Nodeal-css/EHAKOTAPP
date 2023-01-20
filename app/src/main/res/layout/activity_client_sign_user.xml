@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClientSignUser">
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/purple_700"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="10dp"
+            android:text="Create an account"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editFirstnameSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First name"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/editLastnameSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Last name"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/editAddressSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Home Address"
+                android:minHeight="48dp" />
+
+            <ImageView
+                android:id="@+id/imgProfileSignUp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <EditText
+                android:id="@+id/editImageSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Path"
+                android:textSize="9sp"
+                android:textColor="#818181"
+                android:focusable="false"
+                android:clickable="false"/>
+
+            <Button
+                android:id="@+id/btnChooseImgProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Image"
+                app:cornerRadius="40dp"
+                android:layout_marginHorizontal="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:textSize="20sp"
+                android:textColor="@color/purple_700"
+                android:text="Login Credentials"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textSize="20sp"
+                android:text=" Email"/>
+
+            <EditText
+                android:id="@+id/editEmailSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="'@example.com'"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:text=" Password"/>
+
+            <EditText
+                android:id="@+id/editPasswordSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="password"
+                android:minHeight="48dp"
+                android:inputType="textPassword"
+                android:textColorHint="#bbbbbb"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:text="Re-Enter Password"/>
+
+            <EditText
+                android:id="@+id/editRePasswordSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="re-enter password"
+                android:textColorHint="#bbbbbb"
+                android:minHeight="48dp"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/btnSubmitSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                app:cornerRadius="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginHorizontal="90dp"
+                android:layout_marginBottom="70dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

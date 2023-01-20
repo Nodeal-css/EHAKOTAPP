@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverApproveBooking"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="60dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgVehicleAPR"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:src="@color/purple_700"/>
+
+        <TextView
+            android:id="@+id/txtVehicleModelAPR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgVehicleBook"
+            android:gravity="center"
+            android:text="Model"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/txtVehiclePlateAPR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgVehicleBook"
+            android:gravity="center"
+            android:text="Plate Number"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingRight="60dp">
+
+        <ImageView
+            android:id="@+id/imgClientAPR"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@color/purple_500" />
+
+        <TextView
+            android:id="@+id/txtClientNameAPR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgClientAPR"
+            android:text="Client: " />
+
+        <TextView
+            android:id="@+id/txtClientAddressAPR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtClientNameAPR"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgClientAPR"
+            android:text="Address: " />
+
+        <TextView
+            android:id="@+id/txtClientEmailAPR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtClientAddressAPR"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgClientAPR"
+            android:text="Email: " />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:background="#f2f2f2"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/txtBookingStatusAPR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="STATUS"
+            android:textSize="20sp"
+            android:textColor="#ff9900"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Pick-Up Location"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/editPickupAPR"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Address"
+            android:textSize="11sp"
+            android:focusable="false"
+            android:clickable="false"
+            android:drawableLeft="@android:drawable/ic_menu_mylocation"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Delivery Location"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/editDeliveryAPR"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="11sp"
+            android:hint="Address"
+            android:focusable="false"
+            android:clickable="false"
+            android:drawableLeft="@android:drawable/ic_menu_mylocation"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Remarks"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/editRemarksAPR"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Remarks"
+            android:textSize="11sp"
+            android:focusable="false"
+            android:clickable="false"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Total Payment"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txtRateAPR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="P"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="#ff9900"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btnApprove"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Approve"
+            android:visibility="visible"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:cursorVisible="false"
+            android:text="Cancel"
+            android:textColor="@color/purple_700"
+            android:visibility="visible"
+            app:iconTint="#00673AB7"
+            app:strokeColor="#673AB7"
+            app:strokeWidth="2dp"
+            app:cornerRadius="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>
